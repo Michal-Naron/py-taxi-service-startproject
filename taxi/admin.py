@@ -16,4 +16,8 @@ class DriverAdmin(UserAdmin):
         ('Additional info', {'fields': ('license_number',)}),
     )
 
+    add_fieldset = UserAdmin.add_fieldsets + (
+        ('Additional info', {'fields': ('license_number',)}),
+    )
+
     list_display = UserAdmin.list_display + ('license_number',)
