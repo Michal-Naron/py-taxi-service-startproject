@@ -31,4 +31,4 @@ class DriverAdmin(UserAdmin):
 @admin.register(Car)
 class AdminCar(admin.ModelAdmin):
     search_fields = ("model", )
-    list_filter = ('manufacture',)
+    list_filter = ('manufacturer',)
