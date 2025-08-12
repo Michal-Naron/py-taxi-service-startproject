@@ -11,6 +11,7 @@ class ManufacturerAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {'fields': ('name',)}),
     )
+    list_display = ("name", "country")
 
 
 @admin.register(Driver)
@@ -32,3 +33,4 @@ class DriverAdmin(UserAdmin):
 class AdminCar(admin.ModelAdmin):
     search_fields = ("model", )
     list_filter = ('manufacturer',)
+    list_display = ("model", "manufacturer")
