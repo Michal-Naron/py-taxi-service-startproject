@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-class Manufacture(models.Model):
+class Manufacturer(models.Model):
     name = models.CharField(max_length = 100, unique = True)
     country = models.CharField(max_length = 100)
 

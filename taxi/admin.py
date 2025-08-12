@@ -2,12 +2,12 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
 # Register your models here.
-from taxi.models import Driver, Manufacture, Car
+from taxi.models import Driver, Manufacturer, Car
 
 # admin.site.register(Manufacture)
 
-@admin.register(Manufacture)
-class ManufactureAdmin(admin.ModelAdmin):
+@admin.register(Manufacturer)
+class ManufacturerAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {'fields': ('name',)}),
     )
